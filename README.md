@@ -1,1 +1,1 @@
-# Node.jsAuthAPI
+# NodeAuthAPI
