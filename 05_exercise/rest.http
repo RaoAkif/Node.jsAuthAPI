@@ -1,0 +1,43 @@
+###
+GET http://localhost:5000/api/v2/users/1
+
+###
+GET http://localhost:5000/api/v2/users
+
+###
+POST http://localhost:5000/api/v2/auth/register
+Content-Type: application/json
+
+{
+    "username": "Rao Akif5",
+    "email": "akifrao5@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/v2/auth/login
+Content-Type: application/json
+
+{
+    "username": "Rao Akif3",
+    "password": "123456"
+}
+
+###
+PUT http://localhost:5000/api/v2/users/1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "username": "raoakif",
+    "email": "akifrao@gmail.com",
+    "password": "1234567"
+}
+
+###
+DELETE http://localhost:5000/api/v2/users/3
+Content-Type: application/json
+
+{
+    "id": "3"
+}

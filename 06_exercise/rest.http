@@ -1,0 +1,80 @@
+###
+GET http://localhost:5000/api/users/1
+
+###
+GET http://localhost:5000/api/users
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "Rao Akif5",
+    "email": "akifrao5@gmail.com",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "Rao Akif3",
+    "password": "123456"
+}
+
+###
+PUT http://localhost:5000/api/users/1
+Content-Type: application/json
+
+{
+    "id": "1",
+    "username": "raoakif",
+    "email": "akifrao@gmail.com",
+    "password": "1234567"
+}
+
+###
+DELETE http://localhost:5000/api/users/3
+Content-Type: application/json
+
+{
+    "id": "3"
+}
+
+
+// POSTS
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+    "title": "My Fourth Post",
+    "description": "This is the description of my fourth post",
+    "userId": "1"
+}
+
+###
+PUT http://localhost:5000/api/posts/3
+Content-Type: application/json
+
+{
+    "title": "My Third Post",
+    "description": "This is the Updated description of my third post",
+    "userId": "1"
+}
+
+###
+DELETE http://localhost:5000/api/posts/4
+Content-Type: application/json
+
+{
+    "id": "4"
+}
+
+###
+GET http://localhost:5000/api/posts/1
+
+###
+GET http://localhost:5000/api/posts
