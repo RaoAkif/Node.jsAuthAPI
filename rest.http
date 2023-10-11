@@ -1,0 +1,77 @@
+### REGISTER A NEW USER
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "raoakif2",
+  "email": "akifrao2@gmail.com",
+  "password": "123456"
+}
+
+### LOGIN TO YOUR ACCOUNT
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "raoakif2",
+  "password": "123456"
+}
+
+### GET ALL USERS
+GET http://localhost:5000/api/users
+Content-Type: application/json
+
+### GET USER BY ID
+GET http://localhost:5000/api/users/2
+Content-Type: application/json
+
+###
+PUT http://localhost:5000/api/users/4
+Content-Type: application/json
+
+{
+    "username": "raoakif4",
+    "email": "akifrao4@gmail.com",
+    "password": "123456"
+}
+
+###
+DELETE http://localhost:5000/api/users/4
+Content-Type: application/json
+
+
+------------------------------------------------
+
+
+### CREATE A POST
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Fifth Post",
+  "description": "This is the description of my fifth post",
+  "userId": 1
+}
+
+### GET ALL POSTS
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+
+### GET USER BY ID
+GET http://localhost:5000/api/posts/1
+Content-Type: application/json
+
+###
+PUT http://localhost:5000/api/posts/5
+Content-Type: application/json
+
+{
+  "title": "Fifth Post",
+  "description": "This is the description of my fifth post",
+  "userId": 2
+}
+
+###
+DELETE http://localhost:5000/api/posts/5
+Content-Type: application/json
+
